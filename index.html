@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Dev Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro de usuário</h1>
+        <p>Preencha o formulário abaixo para se cadastrar</p>
+        <form>
+            <div class="form-info">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-info">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-info">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required>
+            </div>
+            <div class="form-info">
+                <label for="confirmaSenha">Confirmar Senha:</label>
+                <input type="password" name="confirmaSenha" id="confirmaSenha" required>
+            </div>
+            <div class="form-btns">
+                <button type="reset">Limpar</button>
+                <button type="button" onclick="validarSenha()">Cadastrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
